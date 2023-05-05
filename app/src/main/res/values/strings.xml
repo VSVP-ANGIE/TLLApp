@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">C In Colour</string>
+
+    <string name="select_image">Select Image</string>
+    <string name="select_color_blindness_option">Select Color Blindness Option</string>
+    <string name="simulate_color_blindness">Simulate Color Blindness</string>
+    <string name="error_text">There was an error identifying the colors in the image. Please try again later.</string>
+    <string name="instructions_text">Point your camera at an object and tap the camera button to identify the colors in the image.</string>
+    <string name="generate_palette">Generate Palette</string>
+    <string name="color_theory">Color Theory</string>
+    <string name="color_psychology">Color Psychology</string>
+    <string name="color_trends">Color Trends</string>
+    <string name="charts_for_color_blind_viewers">Charts for color blind viewers</string>
+
+
+</resources>

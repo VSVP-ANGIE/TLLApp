@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:background="#F6F7EB"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ColorBlindTestActivity2"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/question_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:text="What color is this?"/>
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:contentDescription="Color"
+        android:scaleType="fitCenter"
+        android:src="@drawable/green" />
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:text="result"
+        android:visibility="gone" />
+    <RadioGroup
+        android:id="@+id/answers_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/answer_1_radio_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="Red"/>
+
+        <RadioButton
+            android:id="@+id/answer_2_radio_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="Green"/>
+
+        <RadioButton
+            android:id="@+id/answer_3_radio_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="Blue"/>
+
+        <RadioButton
+            android:id="@+id/answer_4_radio_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="Yellow"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/next_question_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Next"
+        android:background="@drawable/custom_button"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:text="Back"
+        android:background="@drawable/custom_button"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>

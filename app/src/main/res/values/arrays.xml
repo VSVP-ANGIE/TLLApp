@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="color_blindness_options">
+        <item>Normal Vision</item>
+        <item>Protanopia (Red-Green Color Blindness)</item>
+        <item>Deuteranopia (Red-Green Color Blindness)</item>
+        <item>Tritanopia (Blue-Yellow Color Blindness)</item>
+    </string-array>
+</resources>

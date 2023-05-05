@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Desktop/C In Colour/app/src/main/res/drawable/custom_button2.xml" value="0.1735" />
+        <entry key="..\:/Desktop/C In Colour/app/src/main/res/layout/activity_color_blind_test.xml" value="0.17831813576494426" />
+        <entry key="..\:/Desktop/C In Colour/app/src/main/res/layout/activity_color_blind_test2.xml" value="0.24909420289855072" />
+        <entry key="..\:/Desktop/C In Colour/app/src/main/res/layout/activity_color_blindness_simulation.xml" value="0.25" />
+        <entry key="..\:/Desktop/C In Colour/app/src/main/res/layout/activity_color_palette.xml" value="0.34057971014492755" />
+        <entry key="..\:/Desktop/C In Colour/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

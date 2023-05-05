@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:background="#F6F7EB"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ColorBlindTestActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/question_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:text="Which number do you see in the circle?" />
+
+    <ImageView
+        android:id="@+id/question_image_view"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:visibility="gone"
+        android:contentDescription="Number in dots"
+        android:scaleType="fitCenter"
+        android:src="@drawable/color_blindness_test_circles_12" />
+
+    <TextView
+        android:id="@+id/testIntro_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:text="" />
+
+    <Button
+        android:id="@+id/proceed_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/black"
+        android:text="Continue"
+        android:background="@drawable/custom_button2"/>
+
+    <RadioGroup
+        android:id="@+id/answer_radiogroup"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/answer_one_radiobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/answer_two_radiobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/answer_three_radiobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/answer_four_radiobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/next_question_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:text="Next"
+        android:background="@drawable/custom_button"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:text="Back"
+        android:background="@drawable/custom_button"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/result_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:text="result"
+        android:visibility="gone" />
+
+</LinearLayout>

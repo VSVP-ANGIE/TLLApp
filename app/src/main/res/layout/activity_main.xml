@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F7EB"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="-4dp"
+    tools:layout_editor_absoluteY="-13dp">
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Welcome"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/buttonsList"
+        android:layout_width="392dp"
+        android:layout_height="324dp"
+        android:layout_marginTop="32dp"
+        android:clickable="true"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <Button
+            android:id="@+id/buttonSim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:onClick="colorBlindnessSimulationButton"
+            android:layout_marginBottom="8dp"
+            android:text="Color Blindness Simulation"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="307dp" />
+
+        <Button
+            android:id="@+id/buttonImgAna"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:onClick="colorPaletteButton"
+            android:layout_marginBottom="8dp"
+            android:text="Color Palette Generator"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="355dp" />
+
+        <Button
+            android:id="@+id/buttonDis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:onClick="colorInfoButton"
+            android:layout_marginBottom="8dp"
+            android:text="Color Knowledge"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="403dp" />
+
+        <Button
+            android:id="@+id/buttonTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:onClick="colorBlindTestButton"
+            android:layout_marginBottom="8dp"
+            android:text="Ishihara Test"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="451dp" />
+
+        <Button
+            android:id="@+id/buttonTest2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:onClick="colorBlindTestButton2"
+            android:layout_marginBottom="8dp"
+            android:text="Color Blindness Quiz"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="499dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="152dp"
+        android:layout_height="127dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSlogan"
+        app:srcCompat="@drawable/rainbow" />
+
+    <TextView
+        android:id="@+id/textViewSlogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="C the Colours"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWelcome" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
